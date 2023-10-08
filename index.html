@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="login">
+        <h1 class="form-title">Login</h1>
+        <div class="form-message form-message-error form-hidden">
+          Incorrect username/password combination.
+        </div>
+        <div class="form-input-group">
+          <input
+            type="text"
+            class="form-input"
+            autofocus
+            placeholder="Username or email"
+            name="username_email"
+          />
+          <div class="form-input-error-message form-hidden">
+            This is an error message !!
+          </div>
+        </div>
+        <div class="form-input-group">
+          <input
+            type="password"
+            class="form-input"
+            autofocus
+            placeholder="Password"
+            name="password"
+          />
+          <div class="form-input-error-message"></div>
+        </div>
+        <button class="form-button" type="submit">Continue</button>
+        <p class="form-text">
+          <a href="#" class="form-link">Forgot your password ?</a>
+        </p>
+        <p class="form-text">
+          <a class="form-link" id="linkCreateAccount"
+            >Don't have an account? Create account</a
+          >
+        </p>
+      </form>
+
+      <form class="form form-hidden" id="createAccount">
+        <h1 class="form-title">Create Account</h1>
+        <div class="form-message form-message-error form-hidden">
+          Incorrect username/password combination.
+        </div>
+        <div class="form-input-group">
+          <input
+            type="text"
+            class="form-input"
+            autofocus
+            placeholder="Username"
+            name="username"
+          />
+          <div class="form-input-error-message form-hidden">
+            This is an error message !!
+          </div>
+        </div>
+        <div class="form-input-group">
+          <input
+            type="text"
+            class="form-input"
+            autofocus
+            placeholder="Email Address"
+            name="email"
+          />
+          <div class="form-input-error-message form-hidden">
+            This is an error message !!
+          </div>
+        </div>
+        <div class="form-input-group">
+          <input
+            type="password"
+            class="form-input"
+            autofocus
+            placeholder="Password"
+            name="password"
+          />
+          <div class="form-input-error-message"></div>
+        </div>
+        <div class="form-input-group">
+          <input
+            type="password"
+            class="form-input"
+            autofocus
+            placeholder="Confirm Password"
+            name="confirm_password"
+          />
+          <div class="form-input-error-message"></div>
+        </div>
+        <button class="form-button" type="submit">Continue</button>
+
+        <p class="form-text">
+          <a class="form-link" id="linkLoginAccount"
+            >Already have an account? Sign in</a
+          >
+        </p>
+      </form>
+    </div>
+    <script src="src/main.js"></script>
+  </body>
+</html>
